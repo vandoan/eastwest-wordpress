@@ -54,7 +54,7 @@ p,li { color: #333132; }
 .bg-bar-pat { background: url("//cdn.shopify.com/s/files/1/2417/2841/files/pattern-bar_2048x2048.png?v=1519491648"); }
 .bg-fb 		{ background: url("//cdn.shopify.com/s/files/1/2417/2841/files/social-facebook_large.png?v=1519609928"); }
 .bg-insta 	{ background: url("//cdn.shopify.com/s/files/1/2417/2841/files/social-instagram_large.png?v=1519609935"); }
-.bg-nr 		{ background-repeat: no-repeat !important; }
+.bg-norepeat { background-repeat: no-repeat !important; }
 .bg-pat 	{ background: url("//cdn.shopify.com/s/files/1/2417/2841/files/pattern-background-aboutme_2048x2048.png?v=1519485329"); }
 .bg-twitter { background: url("//cdn.shopify.com/s/files/1/2417/2841/files/social-twitter_large.png?v=1519609944") }
 .bgc-black 	{ background-color: #333132 !important; }
