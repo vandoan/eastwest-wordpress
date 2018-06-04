@@ -1809,10 +1809,6 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	top: 100px;
 }
 
-.twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
-	border-top: 1px solid #ddd;
-}
-
 .panel-content {
 	position: relative;
 }

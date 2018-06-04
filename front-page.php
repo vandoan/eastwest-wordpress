@@ -1,21 +1,34 @@
-<?php
-/**
- * The front page template file
- *
- * If the user has selected a static page for their homepage, this is what will
- * appear.
- * Learn more: https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+<?php 
+	/* The front page template file */
+	get_header(); ?>
 
-get_header(); ?>
-test test 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+<!-- Header section -->
+		<div id='home-hero' class="bgc-black color-white ff-jos">
+	      <div class="mw-1020 letter- mar-auto">
+	<!-- Intro text -->   
+	        <div class="pb-100 pt-100 mlr-10 mw-850">
+	          <div class="eyebrow fs-30 fs-i fs-32 fw-9 ff-play color-gold">hello,</div>
+		      <div class="fs-40 ff-jos lh-48 mt-15">
+	            Our collective is a small group of moonlighting makers based in San&nbsp;Luis&nbsp;Obispo, 
+	            working to bring handmade joy to California's central&nbsp;coast.&nbsp;
+	          </div>
+	        </div>
+	<!-- Arrow down image -->
+	        <div class="pb-50 ta-center "> 
+	          <img
+	          	class='mw-50 wid-100' 
+	          	src="//cdn.shopify.com/s/files/1/2417/2841/files/down-arrow_300x300.png?v=1519461159">
+	        </div>
+
+	      </div>
+	  	</div>
+	<!-- End section- header --!>
+<!-- Header bar	-->
+	<div class="bg-bar-pat bg-bar-pat bgs-contain hei-36">
+	</div>
+	<!-- End - header bar --!>
 
 		<?php
 		// Show the selected front page content.
