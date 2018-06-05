@@ -36,7 +36,10 @@
 
 
 /* Grid */
+.grid-tc-1111 { grid-template-columns: 1fr 1fr 1fr 1fr; }
 .grid-tc-4-6 { grid-template-columns: 40% 60%; }
+.grid-gap-20-10 { grid-gap: 20px 10px; }
+
 
 
 
@@ -298,9 +301,6 @@ p.art-img { max-width: 800px; }
 	width: 14px; height: 14px; display: inline-block;
 	background-color: #D8D8D8; border-radius: 7px; margin-right: 5px;
 }
-
-.site-header__cart { color: #d8bb45; }
-
 
 
 

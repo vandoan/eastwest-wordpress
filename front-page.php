@@ -25,35 +25,47 @@
 	      </div>
 	  	</div>
 	<!-- End section- header --!>
-<!-- Header bar	-->
-	<div class="bg-bar-pat bg-bar-pat bgs-contain hei-36">
-	</div>
-	<!-- End - header bar --!>
+	
+	<!-- Header bar	-->
+	<div class="bg-bar-pat bg-bar-pat bgs-contain hei-36"></div>
+	
+	<div class='mw-1020 mar-auto'>
 
 		<?php
-		// Show the selected front page content.
-		if ( have_posts() ) :
-			while ( have_posts() ) :
-				the_post();
-				get_template_part( 'template-parts/page/content', 'front-page' );
-			endwhile;
-		else :
-			get_template_part( 'template-parts/post/content', 'none' );
-		endif;
+			// Query
+			$the_query = new WP_Query( 'posts_per_page=-1&post_type=post&tag=goods' );
+
+			// Loop
+			if ( $the_query->have_posts() ) {
+			    echo '<ul class="dis-grid grid-tc-1111">';
+			    while ( $the_query->have_posts() ) {
+			        $the_query->the_post();
+			        // print_r($post); // To dump out all the content.
+			        echo '<li>';
+			        	echo the_post_thumbnail();
+			        	echo get_the_title();
+			        echo '</li>';
+			    }
+			    echo '</ul>';
+			} else {
+			    // o posts found
+			}
+
+			wp_reset_postdata(); /* Restore original Post Data */
 		?>
 		
 
 		<?php
 		// Get each of our panels and show the post data.
 		if ( 0 !== twentyseventeen_panel_count() || is_customize_preview() ) : // If we have pages to show.
-
-			/**
+		/**
 			 * Filter number of front page sections in Twenty Seventeen.
 			 *
 			 * @since Twenty Seventeen 1.0
 			 *
 			 * @param int $num_sections Number of front page sections.
 			 */
+
 			$num_sections = apply_filters( 'twentyseventeen_front_page_sections', 4 );
 			global $twentyseventeencounter;
 
@@ -65,6 +77,7 @@
 
 	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here.
 	?>
+	</div>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
