@@ -4,83 +4,110 @@
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-<!-- Header section -->
+		<!-- Header section -->
 		<div id='home-hero' class="bgc-black color-white ff-jos">
-	      <div class="mw-1020 letter- mar-auto">
-	<!-- Intro text -->   
-	        <div class="pb-100 pt-100 mlr-10 mw-850">
-	          <div class="eyebrow fs-30 fs-i fs-32 fw-9 ff-play color-gold">hello,</div>
-		      <div class="fs-40 ff-jos lh-48 mt-15">
-	            Our collective is a small group of moonlighting makers based in San&nbsp;Luis&nbsp;Obispo, 
-	            working to bring handmade joy to California's central&nbsp;coast.&nbsp;
-	          </div>
-	        </div>
-	<!-- Arrow down image -->
-	        <div class="pb-50 ta-center "> 
-	          <img
-	          	class='mw-50 wid-100' 
-	          	src="//cdn.shopify.com/s/files/1/2417/2841/files/down-arrow_300x300.png?v=1519461159">
-	        </div>
-
-	      </div>
+	      	<div class="mw-1020 letter- mar-auto">
+				<!-- Intro text -->   
+	        	<div class="pb-100 pt-100 mlr-10 mw-850">
+	          		<div class="eyebrow fs-30 fs-i fs-32 fw-9 ff-play color-gold">hello,</div>
+		      		<div class="fs-40 ff-jos lh-48 mt-15">
+	            		Our collective is a small group of moonlighting makers based in San&nbsp;Luis&nbsp;Obispo, 
+	            		working to bring handmade joy to California's central&nbsp;coast.&nbsp;
+	          		</div>
+	        	</div>
+				<!-- Arrow down image -->
+	        	<div class="pb-50 ta-center "> 
+	          		<img
+			          	class='mw-50 wid-100' 
+			          	src="//cdn.shopify.com/s/files/1/2417/2841/files/down-arrow_300x300.png?v=1519461159"
+			        />
+	        	</div>
+	      	</div>
 	  	</div>
-	<!-- End section- header --!>
+		<!-- End section- header --!>
 	
-	<!-- Header bar	-->
-	<div class="bg-bar-pat bg-bar-pat bgs-contain hei-36"></div>
+		<!-- Header bar	-->
+		<div class="bg-bar-pat bg-bar-pat bgs-contain hei-36"></div>
 	
-	<div class='mw-1020 mar-auto'>
+		<!-- Goods -->
+		<div class='mw-1020 mar-auto'>
 
-		<?php
-			// Query
-			$the_query = new WP_Query( 'posts_per_page=-1&post_type=post&tag=goods' );
+			<?php
+				// Query
+				$the_query = new WP_Query( 'posts_per_page=-1&post_type=post&tag=goods' );
 
-			// Loop
-			if ( $the_query->have_posts() ) {
-			    echo '<ul class="dis-grid grid-tc-1111">';
-			    while ( $the_query->have_posts() ) {
-			        $the_query->the_post();
-			        // print_r($post); // To dump out all the content.
-			        echo '<li>';
-			        	echo the_post_thumbnail();
-			        	echo get_the_title();
-			        echo '</li>';
-			    }
-			    echo '</ul>';
-			} else {
-			    // o posts found
-			}
+				// Loop
+				if ( $the_query->have_posts() ) {
+				    echo '<ul class="dis-grid grid-tc-1111">';
+				    while ( $the_query->have_posts() ) {
+				        $the_query->the_post();
+				        // print_r($post); // To dump out all the content.
+				        echo '<li class="mar-10">';
+				        	echo '<div class="mh-230 over-hid">';
+				        	echo the_post_thumbnail();
+				        	echo '</div>';
+				        	echo '<div>';
+				        	echo get_the_title(); 
+				        	echo '</div>';
+				        echo '</li>';
+				    }
+				    echo '</ul>';
+				} else {
+				    // o posts found
+				}
 
-			wp_reset_postdata(); /* Restore original Post Data */
-		?>
+				wp_reset_postdata(); /* Restore original Post Data */
+			?>
+		</div>
+
+
+		<!-- Local Artists -->
+		<div class="section bgc-gold">
+			<div class="dis-grid grid-tc-11 mx-auto mw-1020 pb-50 pt-50">
+	        	<div class="">
+					<div class="hp-artist-img-accent">
+	              		<img src="//cdn.shopify.com/s/files/1/2417/2841/files/local-artists-accents_200x200.png?v=1519462918">
+	          		</div>
+		          	<div class="">
+		            	<h4 class="ff-play fs-48 mb-0 fw-9 fs-i pt-5 clr-black">local artists</h4>
+		            	<div class="ff-jos fs-27">spring</div>
+		            	<div class="rte-setting"><p class=" clr-white ff-jos">Every month, we discuss with local artists in the area and learn more about their work and pieces.</p></div>
+		        	</div>
+	        		<a class="clr-black" href="https://eastwestcollective.co/pages/local-artists"><div class="hp-local-button ff-jos mt-25">read more</div></a>
+			    </div>
+
+		      	<div class="">
+					<div">
+		              	<img class="" src="//cdn.shopify.com/s/files/1/2417/2841/files/DSC_2069_1024x1024.JPG?v=1521178944" data-sizes="auto" sizes="442px">
+		            </div>             
+			    </div>
+			</div>
+		</div>
+
+		<!-- Part with heart -->
+		<div class="shopify-section index-section section">
+  			<div class="page-width mw-1024 pb-50 clr-black">
+      			<div class="custom__item custom__item--1519281524062-0">
+        			<div class="custom__item-inner custom__item-inner--text ta-center">
+						<div class="hp-heart">
+              				<img src="https://cdn.shopify.com/s/files/1/2417/2841/files/parts-with-heart-heart.png?v=1519466001">
+          				</div>
+	          			<div class="medium-up--text-center clr-black">
+	            			<h4 class="ff-play fs-30 mb-0 fw-9 fs-i pt-5">the part with heart</h4>
+	              			<div class="rte-setting mt-35"><p class="ff-jos fs-27 clr-black">EastWest Collective shares a part of its proceeds <br>with these local nonprofits.</p></div>
+	              			<div class="hp-non-profits mt-35">
+	                			<div class="non-profit hei-70 img-100 dis-ib img-100 mlr-60"><img src="//cdn.shopify.com/s/files/1/2417/2841/files/Glean_SLO-bw_grande.png?v=1520091090" alt="Glean non-profit"></div>
+	                			<div class="non-profit hei-70 img-100 dis-ib img-100 mlr-60"><img src="//cdn.shopify.com/s/files/1/2417/2841/files/woods_humane_society_logo-bw_240da254-7005-4c6d-be8a-673179bb5194_large.png?v=1520103168" alt="Woods Human Society non-profit"></div>
+	              			</div>
+	          			</div>
+	        		</div>
+	      		</div>
+	  		</div>
+		</div>
 		
-
-		<?php
-		// Get each of our panels and show the post data.
-		if ( 0 !== twentyseventeen_panel_count() || is_customize_preview() ) : // If we have pages to show.
-		/**
-			 * Filter number of front page sections in Twenty Seventeen.
-			 *
-			 * @since Twenty Seventeen 1.0
-			 *
-			 * @param int $num_sections Number of front page sections.
-			 */
-
-			$num_sections = apply_filters( 'twentyseventeen_front_page_sections', 4 );
-			global $twentyseventeencounter;
-
-			// Create a setting and control for each of the sections available in the theme.
-			for ( $i = 1; $i < ( 1 + $num_sections ); $i++ ) {
-				$twentyseventeencounter = $i;
-				twentyseventeen_front_page_section( null, $i );
-			}
-
-	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here.
-	?>
-	</div>
-
-	</main><!-- #main -->
-</div><!-- #primary -->
+ 
+	</main>
+</div>
 
 <?php
 get_footer();

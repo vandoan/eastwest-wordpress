@@ -1,5 +1,11 @@
 /* Custom CSS */
 
+
+ul { list-style-type: none; }
+
+
+
+
 /* Displays */
 .dis-flex { display: flex; }
 .dis-grid { display: grid; }
@@ -36,6 +42,7 @@
 
 
 /* Grid */
+.grid-tc-11 { grid-template-columns: 1fr 1fr; }
 .grid-tc-1111 { grid-template-columns: 1fr 1fr 1fr 1fr; }
 .grid-tc-4-6 { grid-template-columns: 40% 60%; }
 .grid-gap-20-10 { grid-gap: 20px 10px; }
@@ -116,7 +123,7 @@ p,li { color: #333132; }
 
 .mara,
 .mar-auto { margin: auto; }
-
+.mar-10 { margin: 10px; }
 .mb-0 	{ margin-bottom: 0; }
 .mb-5 	{ margin-bottom: 5px; }
 .mb-10 	{ margin-bottom: 10px; }
@@ -126,7 +133,7 @@ p,li { color: #333132; }
 .mb-40 	{ margin-bottom: 40px; }
 
 .mh-300 { max-height: 300px; }
-
+.mh-230 { max-height: 230px; }
 .ml-auto { margin-left: auto; }
 .ml-0 	{ margin-left: 0; }
 .ml-10 	{ margin-left: 10px; }
@@ -167,7 +174,7 @@ p,li { color: #333132; }
 
 .mx-auto { margin-left: auto; margin-right: auto; }
 
-.over-hidden { overflow: hidden; }
+.over-hid { overflow: hidden; }
 
 .pb-5 	{ padding-bottom: 5px; }
 .pb-20	{ padding-bottom: 20px; }
