@@ -111,6 +111,7 @@ p,li { color: #333132; }
 .hei-215	{ height: 215px; }
 .hei-300 	{ height: 300px; }
 
+.hidden { display: none; }
 .img-100 img { height: 100%; }
 
 .lh-20 { line-height: 20px; }
@@ -305,6 +306,12 @@ p.art-img { max-width: 800px; }
 	width: 14px; height: 14px; display: inline-block;
 	background-color: #D8D8D8; border-radius: 7px; margin-right: 5px;
 }
+
+
+/* Bio pages */
+.category-bios .entry-header { display: none; }
+
+
 
 
 
