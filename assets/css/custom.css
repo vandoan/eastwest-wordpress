@@ -25,7 +25,7 @@ ul { list-style-type: none; }
 .fs-10 { font-size: 10px; }
 .fs-12 { font-size: 12px; }
 .fs-13 { font-size: 13px; }
-.fs-15 { font-size: 15px; }
+.fs-15, .font-15 	{ font-size: 15px; }
 .fs-20 { font-size: 20px; }
 .fs-27 { font-size: 27px; }
 .fs-30 { font-size: 30px; }
@@ -187,6 +187,8 @@ p,li { color: #333132; }
 .pb-100 { padding-bottom: 100px; }
 
 .pl-15  { padding-left: 15px; }
+
+.plr-5 	{ padding-left: 5px; padding-right: 5px; }
 .plr-50 { padding-left: 50px; padding-right: 50px; }
 .plr-70 { padding-left: 70px; padding-right: 70px; }
 
@@ -309,7 +311,9 @@ p.art-img { max-width: 800px; }
 
 
 /* Bio pages */
-.category-bios .entry-header { display: none; }
+.category-bios .entry-header,
+.category-lists .entry-header
+	{ display: none; }
 
 
 .comments-area { display: none; }
