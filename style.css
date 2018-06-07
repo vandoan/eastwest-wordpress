@@ -1159,346 +1159,12 @@ td:last-child {
 10.0 Links
 --------------------------------------------------------------*/
 
-a {
-	color: #222;
-	text-decoration: none;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover,
-a:active {
-	color: #000;
-	outline: 0;
-}
-
-/* Hover effects */
-
-.entry-content a,
-.entry-summary a,
-.comment-content a,
-.widget a,
-.site-footer .widget-area a,
-.posts-navigation a,
-.widget_authors a strong {
-	-webkit-box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
-	box-shadow: inset 0 -1px 0 rgba(15, 15, 15, 1);
-	-webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
-}
-
-.entry-title a,
-.entry-meta a,
-.page-links a,
-.page-links a .page-number,
-.entry-footer a,
-.entry-footer .cat-links a,
-.entry-footer .tags-links a,
-.edit-link a,
-.post-navigation a,
-.logged-in-as a,
-.comment-navigation a,
-.comment-metadata a,
-.comment-metadata a.comment-edit-link,
-.comment-reply-link,
-a .nav-title,
-.pagination a,
-.comments-pagination a,
-.site-info a,
-.widget .widget-title a,
-.widget ul li a,
-.site-footer .widget-area ul li a,
-.site-footer .widget-area ul li a {
-	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
-	text-decoration: none;
-	-webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
-	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
-}
-
-.entry-content a:focus,
-.entry-content a:hover,
-.entry-summary a:focus,
-.entry-summary a:hover,
-.comment-content a:focus,
-.comment-content a:hover,
-.widget a:focus,
-.widget a:hover,
-.site-footer .widget-area a:focus,
-.site-footer .widget-area a:hover,
-.posts-navigation a:focus,
-.posts-navigation a:hover,
-.comment-metadata a:focus,
-.comment-metadata a:hover,
-.comment-metadata a.comment-edit-link:focus,
-.comment-metadata a.comment-edit-link:hover,
-.comment-reply-link:focus,
-.comment-reply-link:hover,
-.widget_authors a:focus strong,
-.widget_authors a:hover strong,
-.entry-title a:focus,
-.entry-title a:hover,
-.entry-meta a:focus,
-.entry-meta a:hover,
-.page-links a:focus .page-number,
-.page-links a:hover .page-number,
-.entry-footer a:focus,
-.entry-footer a:hover,
-.entry-footer .cat-links a:focus,
-.entry-footer .cat-links a:hover,
-.entry-footer .tags-links a:focus,
-.entry-footer .tags-links a:hover,
-.post-navigation a:focus,
-.post-navigation a:hover,
-.pagination a:not(.prev):not(.next):focus,
-.pagination a:not(.prev):not(.next):hover,
-.comments-pagination a:not(.prev):not(.next):focus,
-.comments-pagination a:not(.prev):not(.next):hover,
-.logged-in-as a:focus,
-.logged-in-as a:hover,
-a:focus .nav-title,
-a:hover .nav-title,
-.edit-link a:focus,
-.edit-link a:hover,
-.site-info a:focus,
-.site-info a:hover,
-.widget .widget-title a:focus,
-.widget .widget-title a:hover,
-.widget ul li a:focus,
-.widget ul li a:hover {
-	color: #000;
-	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
-	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
-}
-
-/* Fixes linked images */
-.entry-content a img,
-.comment-content a img,
-.widget a img {
-	-webkit-box-shadow: 0 0 0 8px #fff;
-	box-shadow: 0 0 0 8px #fff;
-}
-
-.post-navigation a:focus .icon,
-.post-navigation a:hover .icon {
-	color: #222;
-}
-
-/*--------------------------------------------------------------
+---------------------------------------------------------
 11.0 Featured Image Hover
 --------------------------------------------------------------*/
 
-.post-thumbnail {
-	margin-bottom: 1em;
-}
 
-.post-thumbnail a img {
-	-webkit-backface-visibility: hidden;
-	-webkit-transition: opacity 0.2s;
-	transition: opacity 0.2s;
-}
 
-.post-thumbnail a:hover img,
-.post-thumbnail a:focus img {
-	opacity: 0.7;
-}
-
-/*--------------------------------------------------------------
-12.0 Navigation
---------------------------------------------------------------*/
-
-.navigation-top {
-	background: #fff;
-	border-bottom: 1px solid #eee;
-	border-top: 1px solid #eee;
-	font-size: 16px;
-	font-size: 1rem;
-	position: relative;
-}
-
-.navigation-top .wrap {
-	max-width: 1000px;
-	padding: 0;
-}
-
-.navigation-top a {
-	color: #222;
-	font-weight: 600;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
-}
-
-.navigation-top .current-menu-item > a,
-.navigation-top .current_page_item > a {
-	color: #767676;
-}
-
-.main-navigation {
-	clear: both;
-	display: block;
-}
-
-.main-navigation ul {
-	background: #fff;
-	list-style: none;
-	margin: 0;
-	padding: 0 1.5em;
-	text-align: left;
-}
-
-/* Hide the menu on small screens when JavaScript is available.
- * It only works with JavaScript.
- */
-
-.js .main-navigation ul,
-.main-navigation .menu-item-has-children > a > .icon,
-.main-navigation .page_item_has_children > a > .icon,
-.main-navigation ul a > .icon {
-	display: none;
-}
-
-.main-navigation > div > ul {
-	border-top: 1px solid #eee;
-	padding: 0.75em 1.695em;
-}
-
-.js .main-navigation.toggled-on > div > ul {
-	display: block;
-}
-
-.main-navigation ul ul {
-	padding: 0 0 0 1.5em;
-}
-
-.main-navigation ul ul.toggled-on {
-	display: block;
-}
-
-.main-navigation ul ul a {
-	letter-spacing: 0;
-	padding: 0.4em 0;
-	position: relative;
-	text-transform: none;
-}
-
-.main-navigation li {
-	border-bottom: 1px solid #eee;
-	position: relative;
-}
-
-.main-navigation li li,
-.main-navigation li:last-child {
-	border: 0;
-}
-
-.main-navigation a {
-	display: block;
-	padding: 0.5em 0;
-	text-decoration: none;
-}
-
-.main-navigation a:hover {
-	color: #767676;
-}
-
-/* Menu toggle */
-
-.menu-toggle {
-	background-color: transparent;
-	border: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	color: #222;
-	display: none;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: 800;
-	line-height: 1.5;
-	margin: 1px auto 2px;
-	padding: 1em;
-	text-shadow: none;
-}
-
-/* Display the menu toggle when JavaScript is available. */
-
-.js .menu-toggle {
-	display: block;
-}
-
-.main-navigation.toggled-on ul.nav-menu {
-	display: block;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-	background-color: transparent;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-
-.menu-toggle:focus {
-	outline: thin solid;
-}
-
-.menu-toggle .icon {
-	margin-right: 0.5em;
-	top: -2px;
-}
-
-.toggled-on .menu-toggle .icon-bars,
-.menu-toggle .icon-close {
-	display: none;
-}
-
-.toggled-on .menu-toggle .icon-close {
-	display: inline-block;
-}
-
-/* Dropdown Toggle */
-
-.dropdown-toggle {
-	background-color: transparent;
-	border: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	color: #222;
-	display: block;
-	font-size: 16px;
-	right: -0.5em;
-	line-height: 1.5;
-	margin: 0 auto;
-	padding: 0.5em;
-	position: absolute;
-	text-shadow: none;
-	top: 0;
-}
-
-.dropdown-toggle:hover,
-.dropdown-toggle:focus {
-	background: transparent;
-}
-
-.dropdown-toggle:focus {
-	outline: thin dotted;
-}
-
-.dropdown-toggle.toggled-on .icon {
-	-ms-transform: rotate(-180deg); /* IE 9 */
-	-webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
-	transform: rotate(-180deg);
-}
-
-/* Scroll down arrow */
-
-.site-header .menu-scroll-down {
-	display: none;
-}
 
 /*--------------------------------------------------------------
 13.0 Layout
@@ -1865,10 +1531,6 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 .site-content-contain {
 	background-color: #fff;
 	position: relative;
-}
-
-.site-content {
-	padding: 2.5em 0 0;
 }
 
 /*--------------------------------------------------------------
@@ -2258,14 +1920,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 13.5 Pages
 --------------------------------------------------------------*/
 
-.page-header {
-	padding-bottom: 2em;
-}
 
-.page .entry-header .edit-link {
-	font-size: 14px;
-	font-size: 0.875rem;
-}
 
 .search .page .entry-header .edit-link {
 	font-size: 11px;
@@ -2275,10 +1930,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
-}
-
-.page:not(.home) #content {
-	padding-bottom: 1.5em;
 }
 
 /* 404 page */
@@ -3707,11 +3358,6 @@ p > object:only-child {
 	}
 
 	/* Posts */
-
-	.site-content {
-		padding: 5.5em 0 0;
-	}
-
 	.single-post .entry-title,
 	.page .entry-title {
 		font-size: 26px;
@@ -3868,10 +3514,6 @@ p > object:only-child {
 	.twentyseventeen-front-page.page-one-column .entry-header,
 	.archive.page-one-column:not(.has-sidebar) .page-header {
 		margin-bottom: 4em;
-	}
-
-	.page:not(.home) #content {
-		padding-bottom: 3.25em;
 	}
 
 	/* 404 page */

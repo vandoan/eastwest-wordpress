@@ -19,7 +19,7 @@ ul { list-style-type: none; }
 .ff-play 	{ font-family: 'Playfair Display', georgia, serif; }
 .ff-jos 	{ font-family: 'Josefin Sans', sans-serif; }
 
-.fs-i 		{ font-style: italic; }
+.fs-italic 		{ font-style: italic; }
 
 
 .fs-10 { font-size: 10px; }
@@ -54,8 +54,9 @@ ul { list-style-type: none; }
 /* This style sheet is one that holds additional css post theme. */
 a {
 	color: #7BCBB8;
-	transition: all .2s;
 	border-bottom: none !important;
+	text-decoration: none;
+	transition: all .2s;
 }
 a:hover {
 	opacity: .7;
@@ -164,15 +165,15 @@ p,li { color: #333132; }
 .mt-130 { margin-top: 130px }
 
 .mw-50 { max-width: 50px; }
-.mw-620 { max-width: 620px; }
 .mw-350 { max-width: 350px; }
 .mw-330 { max-width: 330px; }
 .mw-400	{ max-width: 400px; }
+.mw-620 { max-width: 620px; }
 .mw-780 { max-width: 780px; }
 .mw-850 { max-width: 850px; }
 .mw-1020 { max-width: 1020px; }
 
-.mx-auto { margin-left: auto; margin-right: auto; }
+.mlr-auto, .mx-auto { margin-left: auto; margin-right: auto; }
 
 .over-hid { overflow: hidden; }
 
@@ -201,6 +202,8 @@ p,li { color: #333132; }
 .pt-45 	{ padding-top: 45px; }
 .pt-50 	{ padding-top: 50px; }
 .pt-100 { padding-top: 100px; }
+
+.ptb-40	{ padding-top: 40px; padding-bottom:40px; }
 
 .pos-abs { position: absolute; }
 .pos-rel { position: relative; }
@@ -264,22 +267,16 @@ font-family: 'Cormorant', serif;
 .pa-hero { min-height: 500px; background-position-y: -30px; }
 .pa-hero .main { top: 40px; bottom: 59px; max-width: 740px; }
 
-.s-member .member-list .eyebrow { 
-	font-size: 12px; color: #D8BB45; font-weight: 900; 
-	font-family: 'Playfair Display', georgia, serif; font-style: italic; }
 .button-shop {
-		font-family: 'Josefin Sans', sans-serif;
-	    padding: 7px 52px; display: inline-block; 
-	    border: 1px solid #333132; border-radius: 3px;
+	font-family: 'Josefin Sans', sans-serif;
+    padding: 7px 52px; display: inline-block; 
+    border: 1px solid #333132; border-radius: 3px;
 }
 .button-discover { padding: 7px 25px; }
 .p-abo .button-social {
 	width: 20px; height: 20px; display: inline-block;
 	margin: 0 10px 10px; vertical-align: bottom;
 }
-.p-abo .button-social.fb { width: 10px; }
-.p-abo .button-social.twitter { height: 18px; }
-
 
 /* Page Blogs */
 .article__list-image-wrapper { height: 200px; width: 200px; }
@@ -312,8 +309,14 @@ p.art-img { max-width: 800px; }
 
 
 /* Media Queries  - tablet and mobile */
-@media only screen and (max-width: 749px) {
-	.grid-tc-1-sm { grid-template-columns: 100%; }
+@media only screen and (max-width: 800px) {
+	.grid-tc-1-md { grid-template-columns: 100%; }
 
+}
+
+/* Media Queries  - tablet and mobile */
+@media only screen and (max-width: 600px) {
+    .dis-grid-sm 	{ display: grid; }
+    .grid-tc-1-sm 		{ grid-template-columns: 1fr; }
 }
 

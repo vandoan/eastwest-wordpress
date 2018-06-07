@@ -16,7 +16,7 @@
 <div id='page' class='site'>
 
 	<header class='bgc-black pb-45 pt-45'>
-		<div data-name='inner-cell' class='dis-grid grid-tc-4-6 grid-tc-1-sm mw-1020 mx-auto'>
+		<div data-name='inner-cell' class='dis-grid grid-tc-4-6 grid-tc-1-md mw-1020 mx-auto'>
 	      	<div id='ew-logo' class='dis-flex mw-1020 mx-auto'>
 				<a href='/' itemprop='url' class='site-header__logo-image'>
 					<img src='//cdn.shopify.com/s/files/1/2417/2841/files/ewc-white-logo-with-collective_1024x1024.png?v=1519457217'

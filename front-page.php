@@ -86,13 +86,13 @@
 
 		<!-- Part with heart -->
 		<div class="shopify-section index-section section">
-  			<div class="page-width mw-1024 pb-50 clr-black">
-      			<div class="custom__item custom__item--1519281524062-0">
-        			<div class="custom__item-inner custom__item-inner--text ta-center">
+  			<div class="page-width mw-1020 pb-50 clr-black">
+      			<div class="">
+        			<div class="ta-center">
 						<div class="hp-heart">
               				<img src="https://cdn.shopify.com/s/files/1/2417/2841/files/parts-with-heart-heart.png?v=1519466001">
           				</div>
-	          			<div class="medium-up--text-center clr-black">
+	          			<div class="color-black">
 	            			<h4 class="ff-play fs-30 mb-0 fw-9 fs-i pt-5">the part with heart</h4>
 	              			<div class="rte-setting mt-35"><p class="ff-jos fs-27 clr-black">EastWest Collective shares a part of its proceeds <br>with these local nonprofits.</p></div>
 	              			<div class="hp-non-profits mt-35">
