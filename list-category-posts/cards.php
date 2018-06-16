@@ -49,9 +49,9 @@ $lcp_display_output .= '<div id="list-card" class="dis-grid ff-jos grid-tc-1111 
   //  Else we can define a placeholder or leave an empty space next to the indented text.)
     if (has_post_thumbnail($post->ID)):
       $lcp_display_output .= '<div data-name="item" class="plr-5">';
-      $lcp_display_output .= '<span class="">';
+      $lcp_display_output .= '<div class="mb-10 mh-245 mh-initial-sm over-hid">';
       $lcp_display_output .= $this->get_thumbnail($post);
-      $lcp_display_output .= '</span>';
+      $lcp_display_output .= '</div>';
     else: 
       $lcp_display_output .= '<div class="postlist withthumb cardview">';
       $lcp_display_output .= '<span class="">';

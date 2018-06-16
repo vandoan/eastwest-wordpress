@@ -20,6 +20,16 @@
 	?>
 	<header class="entry-header">
 		<?php
+
+
+		if ( is_single() ) {
+			the_title( '<h1 class="entry-title fs-35 fs-i">', '</h1>' );
+		} elseif ( is_front_page() && is_home() ) {
+			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+		} else {
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		}
+
 		if ( 'post' === get_post_type() ) {
 			echo '<div class="entry-meta">';
 			if ( is_single() ) {
@@ -30,17 +40,16 @@
 			};
 			echo '</div><!-- .entry-meta -->';
 		};
-
-		if ( is_single() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		} elseif ( is_front_page() && is_home() ) {
-			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
-		} else {
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		}
 		?>
 	</header><!-- .entry-header -->
 
+	<?php	if ( ( is_single() || ( is_page() && ! twentyseventeen_is_frontpage() ) ) && has_post_thumbnail( get_queried_object_id() ) ) :
+			echo '<div class="single-featured-image-header mw-720 mlr-auto">';
+			echo get_the_post_thumbnail( get_queried_object_id(), 'twentyseventeen-featured-image' );
+			echo '</div><!-- .single-featured-image-header -->';
+		endif;
+	?>
+	
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() && ! get_post_gallery() ) : ?>
 		<div class="post-thumbnail">
 			<a href="<?php the_permalink(); ?>">

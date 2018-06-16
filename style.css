@@ -99,51 +99,11 @@ pre {
 	font-size: 1em;
 }
 
-a {
-	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
-}
-
-a:active,
-a:hover {
-	outline-width: 0;
-}
-
 abbr[title] {
 	border-bottom: 1px #767676 dotted;
 	text-decoration: none;
 }
-
-b,
-strong {
-	font-weight: inherit;
-}
-
-b,
-strong {
-	font-weight: 700;
-}
-
-code,
-kbd,
-samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
-}
-
-dfn {
-	font-style: italic;
-}
-
-mark {
-	background-color: #eee;
-	color: #222;
-}
-
-small {
-	font-size: 80%;
-}
-
+  
 sub,
 sup {
 	font-size: 75%;
@@ -192,11 +152,6 @@ textarea {
 button,
 input {
 	overflow: visible;
-}
-
-button,
-select {
-	text-transform: none;
 }
 
 button,
@@ -1565,17 +1520,17 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 .entry-meta {
-	color: #767676;
+	color: #333132;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 11px;
-	font-size: 0.6875rem;
 	font-weight: 800;
 	letter-spacing: 0.1818em;
 	padding-bottom: 0.25em;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .entry-meta a {
-	color: #767676;
+	color: #333132;
 }
 
 .byline,
@@ -1691,6 +1646,7 @@ body:not(.twentyseventeen-front-page) #comments {
 
 body:not(.twentyseventeen-front-page) .entry-header {
 	padding-top: 0;
+	padding-bottom: 30px;
 }
 
 .blog .entry-meta a.post-edit-link,
@@ -3326,8 +3282,12 @@ p > object:only-child {
 	/* Posts */
 	.single-post .entry-title,
 	.page .entry-title {
-		font-size: 26px;
-		font-size: 1.625rem;
+		font-size: 35px;
+		font-weight: 600;
+	    font-family: 'Playfair Display', georgia, serif;
+	    font-style: italic;
+	    letter-spacing: 1px;
+		margin-top: 60px;
 	}
 
 	.comments-pagination,

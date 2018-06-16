@@ -3,13 +3,14 @@
 
 ul { list-style-type: none; }
 
-
+p { font-family: 'Josefin Sans', sans-serif; }
 
 
 /* Displays */
-.dis-flex { display: flex; }
-.dis-grid { display: grid; }
-.dis-ib { display: inline-block; }
+.d-none  	{ display: none; }
+.dis-flex 	{ display: flex; }
+.dis-grid 	{ display: grid; }
+.dis-ib 	{ display: inline-block; }
 
 /* Flex */
 .flex-as-fe	{ align-self: flex-end; }
@@ -19,7 +20,7 @@ ul { list-style-type: none; }
 .ff-play 	{ font-family: 'Playfair Display', georgia, serif; }
 .ff-jos 	{ font-family: 'Josefin Sans', sans-serif; }
 
-.fs-italic 		{ font-style: italic; }
+.fs-italic, .fs-i 	{ font-style: italic; }
 
 
 .fs-10 { font-size: 10px; }
@@ -59,24 +60,25 @@ a {
 	transition: all .2s;
 }
 a:hover {
-	opacity: .7;
+	opacity: .7 !important;
 	transition: all .4s;
 }
 p,li { color: #333132; }
 
 .bb-4 { border-bottom: solid 4px; }
-.bg-bar-pat { background: url("//cdn.shopify.com/s/files/1/2417/2841/files/pattern-bar_2048x2048.png?v=1519491648"); }
-.bg-fb 		{ background: url("//cdn.shopify.com/s/files/1/2417/2841/files/social-facebook_large.png?v=1519609928"); }
-.bg-insta 	{ background: url("//cdn.shopify.com/s/files/1/2417/2841/files/social-instagram_large.png?v=1519609935"); }
+.bg-bar-pat { background: url("//http://eastwestcollective.co/wp-content/uploads/2018/06/pattern-bar_2048x2048.png"); }
+.bg-fb 		{ background: url("http://eastwestcollective.co/wp-content/uploads/2018/06/social-facebook_large-1.png"); }
+.bg-insta 	{ background: url("http://eastwestcollective.co/wp-content/uploads/2018/06/social-instagram_large.png"); }
 .bg-norepeat { background-repeat: no-repeat !important; }
-.bg-pat 	{ background: url("//cdn.shopify.com/s/files/1/2417/2841/files/pattern-background-aboutme_2048x2048.png?v=1519485329"); }
-.bg-twitter { background: url("//cdn.shopify.com/s/files/1/2417/2841/files/social-twitter_large.png?v=1519609944") }
+.bg-pat 	{ background: url("http://eastwestcollective.co/wp-content/uploads/2018/06/pattern-background-aboutme_2048x2048.png"); }
+.bg-twitter { background: url("http://eastwestcollective.co/wp-content/uploads/2018/06/social-twitter_large.png") }
 .bgc-black 	{ background-color: #333132 !important; }
 .bgc-gray 	{ background-color: #D8D8D8; }
 .bgc-gold 	{ background-color: #D8BB45 !important; }
 .bgc-white 	{ background-color: white; }
 .bgs-contain { background-size: contain; }
 .bgs-cover 	{ background-size: cover; }
+.bgr-no 	{ background-repeat: no-repeat; }
 
 .border { border: 1px solid; border-radius: 3px; }
 
@@ -133,9 +135,11 @@ p,li { color: #333132; }
 .mb-25 	{ margin-bottom: 25px; }
 .mb-30 	{ margin-bottom: 30px; }
 .mb-40 	{ margin-bottom: 40px; }
+.mb-60 	{ margin-bottom: 60px; }
 
-.mh-300 { max-height: 300px; }
 .mh-230 { max-height: 230px; }
+.mh-245 { max-height: 245px; }
+.mh-300 { max-height: 300px; }
 .ml-auto { margin-left: auto; }
 .ml-0 	{ margin-left: 0; }
 .ml-10 	{ margin-left: 10px; }
@@ -169,7 +173,8 @@ p,li { color: #333132; }
 .mw-350 { max-width: 350px; }
 .mw-330 { max-width: 330px; }
 .mw-400	{ max-width: 400px; }
-.mw-620 { max-width: 620px; }
+.mw-620, p.mw-620 { max-width: 620px; }
+.mw-720 { max-width: 720px; }
 .mw-780 { max-width: 780px; }
 .mw-850 { max-width: 850px; }
 .mw-1020 { max-width: 1020px; }
@@ -189,6 +194,7 @@ p,li { color: #333132; }
 .pl-15  { padding-left: 15px; }
 
 .plr-5 	{ padding-left: 5px; padding-right: 5px; }
+.plr-10 { padding-left: 10px; padding-right: 10px; }
 .plr-50 { padding-left: 50px; padding-right: 50px; }
 .plr-70 { padding-left: 70px; padding-right: 70px; }
 
@@ -197,7 +203,8 @@ p,li { color: #333132; }
 .ptb-15 { padding-top: 15px; padding-bottom: 15px; }
 .ptb-45 { padding-top: 45px; padding-bottom: 45px; }
 
-.pr-30 { padding-right: 30px; }
+.pr-5 	{ padding-right: 5px; }
+.pr-30 	{ padding-right: 30px; }
 
 .pt-5 	{ padding-top: 5px; }
 .pt-15 	{ padding-top: 15px; }
@@ -213,7 +220,7 @@ p,li { color: #333132; }
 
 .ta-center { text-align: center; }
 .ta-left   { text-align: left; }
-.ta-right  { text-align: right; }
+.ta-right, .ta-r  { text-align: right; }
 
 .tt-initial { text-transform: initial; }
 
@@ -312,23 +319,44 @@ p.art-img { max-width: 800px; }
 
 /* Bio pages */
 .category-bios .entry-header,
-.category-lists .entry-header
+.category-lists .entry-header,
+.post-52 .entry-header,
+.post-45 .entry-header,
+.post-94 .entry-header
 	{ display: none; }
 
-
+/* Good pages */
 .comments-area { display: none; }
+.category-goods { 
+	margin: auto;
+	max-width: 720px; 
+}
 
+.category-goods header, .p {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.category-goods img {
+    margin-top: 40px;
+}
 
 
 /* Media Queries  - tablet and mobile */
 @media only screen and (max-width: 800px) {
 	.grid-tc-1-md { grid-template-columns: 100%; }
+	.plr-10-md { padding-left: 10px; padding-right: 10px; }
 
 }
 
 /* Media Queries  - tablet and mobile */
 @media only screen and (max-width: 600px) {
+	.bgs-cover-sm	{ background-size: cover; }
     .dis-grid-sm 	{ display: grid; }
     .grid-tc-1-sm 		{ grid-template-columns: 1fr; }
+    .mh-initial-sm	{ max-height: initial; }
+    .mlr-auto-sm 	{ margin-left: auto; margin-right: auto; }
+    .pad-10-sm	{ padding: 10px; }
+    .text-center-sm { text-align: center; }
 }
 
