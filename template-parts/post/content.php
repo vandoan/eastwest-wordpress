@@ -18,7 +18,7 @@
 		echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
 	endif;
 	?>
-	<header class="entry-header">
+	<header class="entry-header plr-10">
 		<?php
 
 		if ( is_single() ) {

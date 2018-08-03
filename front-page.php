@@ -34,7 +34,7 @@
 			<div class="ff-jos mb-40 mt-55 fs-35 clr-black ta-center fs-45" data-name='shop-header'>Goods</div>
 			<?php
 				// Query
-				$the_query = new WP_Query( 'posts_per_page=-1&post_type=post&tag=good' );
+				$the_query = new WP_Query( 'posts_per_page=-1&post_type=post&cat=31' );
 
 				// Loop
 				if ( $the_query->have_posts() ) {
@@ -46,10 +46,10 @@
 				        	echo '<a href="';
 				        	echo get_permalink();
 				        	echo '">';
-				        	echo '<div class="mh-230 over-hid">';
+				        	echo '<div class="mh-235 over-hid">';
 				        	echo the_post_thumbnail('medium');
 				        	echo '</div>';
-				        	echo '<h3 class="color-mint ff-jos font-15 pr-5 ta-r">';
+				        	echo '<h3 class="d-none color-mint ff-jos font-15 pr-5 ta-r v-h">';
 				        	echo get_the_title(); 
 				        	echo '</h3>';
 				        	echo '</a>';
@@ -77,7 +77,7 @@
 		            	<div class="ff-jos fs-27">spring</div>
 		            	<div class="rte-setting"><p class=" color-white ff-jos">Every month, we discuss with local artists in the area and learn more about their work and pieces.</p></div>
 		        	</div>
-	        		<a class="color-black" href="https://eastwestcollective.co/pages/local-artists"><div class="hp-local-button ff-jos mt-25">read more</div></a>
+	        		<a class="color-black" href="/local-artists"><div class="hp-local-button ff-jos mt-25">read more</div></a>
 			    </div>
 
 		      	<div class="">

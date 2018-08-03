@@ -1634,7 +1634,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 }
 
 body:not(.twentyseventeen-front-page) .entry-header {
-	padding: 1em 0;
+	padding: 1em 10px;
 }
 
 body:not(.twentyseventeen-front-page) .entry-header,
@@ -1722,6 +1722,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 /* Entry footer */
 
 .entry-footer {
+    margin: auto;
 	border-bottom: 1px solid #eee;
 	border-top: 1px solid #eee;
 	margin-top: 2em;
@@ -1820,6 +1821,8 @@ body:not(.twentyseventeen-front-page) .entry-header {
 .post-navigation {
 	font-weight: 800;
 	margin: 3em 0;
+	width: 94%;
+    margin: auto;
 }
 
 .post-navigation .nav-links {
@@ -3359,7 +3362,7 @@ p > object:only-child {
 
 	.entry-footer {
 		display: table;
-		width: 100%;
+		width: 98%;
 	}
 
 	.entry-footer .cat-tags-links {
